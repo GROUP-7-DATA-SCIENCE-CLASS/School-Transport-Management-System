@@ -37,3 +37,25 @@ class TransportMenu:
             "11": ("Occupancy summary", self.occupancy_summary),
             "12": ("Load sample data", self.load_sample),
         }
+
+    def run(self):
+        print(f"\n=== {self.s.school_name} - Transport Management System ===")
+        while True:
+            print("\nMAIN MENU")
+            for key, (label, _) in self.actions.items():
+                print(f"  {key:>2}. {label}")
+            print("   0. Exit")
+            try:
+                choice = input("Choose an option: ").strip()
+            except EOFError:
+                break
+            if choice == "0":
+                print("Goodbye.")
+                break
+            if choice not in self.actions:
+                print("  Invalid option. Choose a number from the menu.")
+                continue
+            try:
+                self.actions[choice][1]()
+            except (ValueError, TransportError) as err:
+                print(f"  REJECTED: {err}")
