@@ -21,3 +21,19 @@ class Learner:
         if not str(grade).strip():
             raise ValueError("Grade/class cannot be empty.")
         self.grade = str(grade).strip().upper()  # public attribute
+    
+    @property
+    def learner_id(self):
+        return self._learner_id
+
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, value):
+        value = " ".join(str(value).split())
+        if len(value) < 2 or not all(c.isalpha() or c in " -'." for c in value):
+            raise ValueError("Name must have at least 2 characters and contain letters only.")
+        self._name = value.title()
+
