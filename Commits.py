@@ -37,3 +37,16 @@ class Learner:
             raise ValueError("Name must have at least 2 characters and contain letters only.")
         self._name = value.title()
 
+    @property
+    def contact(self):
+        return self._contact
+
+    @contact.setter
+    def contact(self, value):
+        value = str(value).replace(" ", "")
+        if not re.fullmatch(r"0\d{9}|\+256\d{9}", value):
+            raise ValueError("Guardian contact must be 10 digits starting with 0 (or +256 and 9 digits).")
+        self._contact = value
+
+    def __str__(self):
+        return f"{self._learner_id} | {self._name} | {self.grade} | Guardian: {self._contact}"
