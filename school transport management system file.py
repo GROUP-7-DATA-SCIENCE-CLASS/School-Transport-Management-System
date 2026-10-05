@@ -95,3 +95,5 @@ class Van(TransportVehicle):
 
     def transport_charge(self, distance_km):               # few seats, so a higher fee each
         return round(100_000 + 2_500 * distance_km)
+    
+        return round(100_000 + 2_500 * distance_km)
