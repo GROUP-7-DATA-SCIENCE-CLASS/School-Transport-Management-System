@@ -321,7 +321,7 @@ Credit for individual contributions should be attributed according to the work e
 Data Science & Analytics Student | Python | Software Development | Machine Learning
 
 - GitHub: [@timomugishan8-ai](https://github.com/timomugishan8-ai)
-- LinkedIn: [Timothy Mugisha](https://www.linkedin.com/in/timothy-mugisha-39ba2a2b/)
+- LinkedIn: [Timothy Mugisha](www.linkedin.com/in/timothy-mugisha-39ba2a2b9)
 
 ## Project Status
 
