@@ -315,13 +315,6 @@ This is a collaborative academic project maintained in the `GROUP-7-DATA-SCIENCE
 
 Credit for individual contributions should be attributed according to the work each team member completed.
 
-## Author
-
-**Timothy Mugisha**  
-Data Science & Analytics Student | Python | Software Development | Machine Learning
-
-- GitHub: [@timomugishan8-ai](https://github.com/timomugishan8-ai)
-- LinkedIn: [Timothy Mugisha](www.linkedin.com/in/timothy-mugisha-39ba2a2b9)
 
 ## Project Status
 
